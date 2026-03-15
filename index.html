@@ -1,0 +1,259 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed Farid | Portfolio</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"><style>
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, Helvetica, sans-serif}
+
+body{
+background:#0a0a0a;
+color:white;
+overflow-x:hidden;
+}
+
+/* animated background */
+body::before{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+background:radial-gradient(circle at 20% 20%,#1a1a1a,transparent 40%),
+radial-gradient(circle at 80% 80%,#151515,transparent 40%);
+z-index:-1;
+}
+
+header{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px 20px;
+}
+
+.hero-img{
+width:170px;
+height:170px;
+border-radius:50%;
+overflow:hidden;
+border:4px solid #444;
+margin-bottom:25px;
+}
+
+.hero-img img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+h1{
+font-size:clamp(28px,4vw,50px);
+margin-bottom:10px;
+}
+
+h2{
+font-size:clamp(18px,2vw,24px);
+color:#aaa;
+margin-bottom:25px;
+}
+
+.social-icons{
+display:flex;
+gap:20px;
+margin-top:10px;
+}
+
+.social-icons a{
+font-size:22px;
+color:white;
+background:#1c1c1c;
+padding:12px;
+border-radius:50%;
+transition:.3s;
+}
+
+.social-icons a:hover{
+transform:translateY(-4px);
+background:#333;
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:40px;
+text-align:center;
+}
+
+.about{
+max-width:800px;
+margin:auto;
+text-align:center;
+line-height:1.8;
+color:#ccc;
+}
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.skill-card{
+background:#151515;
+padding:20px;
+border-radius:10px;
+text-align:center;
+transition:.3s;
+}
+
+.skill-card:hover{
+transform:translateY(-5px);
+background:#1f1f1f;
+}
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.project-card{
+background:#141414;
+border-radius:12px;
+overflow:hidden;
+transition:.35s;
+}
+
+.project-card:hover{
+transform:translateY(-8px);
+}
+
+.project-img{
+height:200px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#888;
+font-size:14px;
+background:#0f0f0f;
+border-bottom:1px solid #222;
+}
+
+.project-content{
+padding:20px;
+}
+
+.project-content h3{
+margin-bottom:10px;
+}
+
+.project-buttons{
+display:flex;
+gap:10px;
+margin-top:15px;
+}
+
+.project-buttons a{
+flex:1;
+text-align:center;
+padding:10px;
+border-radius:6px;
+background:#1f1f1f;
+color:white;
+text-decoration:none;
+font-size:14px;
+transition:.3s;
+}
+
+.project-buttons a:hover{
+background:#333;
+}
+
+footer{
+text-align:center;
+padding:40px 20px;
+color:#888;
+}
+
+@media(max-width:600px){
+
+header{padding-top:120px}
+
+.social-icons a{
+font-size:20px;
+padding:10px;
+}
+
+}
+
+</style></head><body><header><div class="hero-img">
+<img src="./images/ma.webp" alt="Mohamed Farid">
+</div><h1>Mohamed Farid</h1>
+<h2>Front-End & Mobile App Developer</h2><div class="social-icons">
+<a href="mailto:mohamedfaridamk37@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+<a href="https://www.linkedin.com/in/mohamed-farid-9b9920384"><i class="fa-brands fa-linkedin"></i></a>
+<a href="#"><i class="fa-brands fa-github"></i></a>
+<a href="https://wa.me/201100529937" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+</div></header><section>
+<h2 class="section-title">About Me</h2><p class="about">
+I am Mohamed Farid, a Computer Science and Artificial Intelligence student at Sohag University and a Front-End & Mobile App Developer. I build modern, responsive web and mobile applications with clean user interfaces and strong performance. 
+
+I also work as a Social Media Specialist and Video Editor, combining technical and creative skills to deliver engaging digital solutions. Fluent in Arabic and English, and always improving my skills in modern development technologies.
+</p></section><section>
+<h2 class="section-title">Skills</h2><div class="skills-grid"><div class="skill-card">HTML5</div>
+<div class="skill-card">CSS3</div>
+<div class="skill-card">JavaScript</div>
+<div class="skill-card">React</div>
+<div class="skill-card">Next.js</div>
+<div class="skill-card">Tailwind</div>
+<div class="skill-card">Bootstrap</div>
+<div class="skill-card">Responsive Design</div>
+<div class="skill-card">React Native</div>
+<div class="skill-card">Expo</div>
+<div class="skill-card">Firebase</div>
+<div class="skill-card">REST APIs</div>
+<div class="skill-card">Git & GitHub</div>
+<div class="skill-card">UI/UX Design</div></div>
+</section><section><h2 class="section-title">Projects</h2><div class="projects-grid"><!-- PROJECT 1 --><div class="project-card">
+<div class="project-img"> Codi.x Team</div><div class="project-content">
+<h3>Tech Team Platform</h3>
+<p>Full platform for managing a technical team, displaying members, projects and team activities.</p><div class="project-buttons">
+<a href="https://mohamedfarid37-cloud.github.io/codi.x/">Live Demo</a>
+<!-- <a href="#">View Code</a> -->
+</div>
+</div>
+</div><!-- PROJECT 2 --><div class="project-card">
+<div class="project-img"> AZKAR </div><div class="project-content">
+<h3>Azkar & Charity Website</h3>
+<p>Islamic website that provides daily azkar, reminders and charity content in a clean interface.</p><div class="project-buttons">
+<a href="project-card">Not available now</a>
+<!-- <a href="#">View Code</a> -->
+</div>
+</div>
+</div><!-- PROJECT 3 --><div class="project-card">
+<div class="project-img"> SOHAGY MARKET</div><div class="project-content">
+<h3>Sohagy Market</h3>
+<p>Modern marketplace website designed for showcasing products and local businesses.</p><div class="project-buttons">
+<a href="https://mohamedfarid37-cloud.github.io/Sohagy-Marker/">Live Demo</a>
+<!-- <a href="#">View Code</a> -->
+</div>
+</div>
+</div><!-- PROJECT 4 --><div class="project-card">
+<div class="project-img"> Educational WEBSITE</div><div class="project-content">
+<h3>Educational Platform</h3>
+<p>Online learning platform with courses, exams and student progress tracking.</p><div class="project-buttons">
+<a href="project-card">Not available now</a>
+<!-- <a href="">Not available now</a>
+<a href="#">View Code</a> -->
+</div>
+</div>
+</div></div></section><footer>
+© 2026 Mohamed Farid — Portfolio
+</footer></body>
+</html>
