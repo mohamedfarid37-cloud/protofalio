@@ -1,259 +1,301 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mohamed Farid | Portfolio</title>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"><style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Farid | Portfolio</title>
+  <meta
+    name="description"
+    content="Mohamed Farid - Front-End Developer, Flutter Developer, and Visual Content Creator portfolio."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
 
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, Helvetica, sans-serif}
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
 
-body{
-background:#0a0a0a;
-color:white;
-overflow-x:hidden;
-}
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand">Mohamed<span>Farid</span></a>
 
-/* animated background */
-body::before{
-content:"";
-position:fixed;
-width:100%;
-height:100%;
-background:radial-gradient(circle at 20% 20%,#1a1a1a,transparent 40%),
-radial-gradient(circle at 80% 80%,#151515,transparent 40%);
-z-index:-1;
-}
+      <nav class="nav" id="navMenu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-header{
-min-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:40px 20px;
-}
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-.hero-img{
-width:170px;
-height:170px;
-border-radius:50%;
-overflow:hidden;
-border:4px solid #444;
-margin-bottom:25px;
-}
+  <main>
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Front-End Developer • Flutter Developer • Visual Content Creator</p>
 
-.hero-img img{
-width:100%;
-height:100%;
-object-fit:cover;
-}
+          <h1>I build simple and clean web & mobile apps that actually work well</h1>
 
-h1{
-font-size:clamp(28px,4vw,50px);
-margin-bottom:10px;
-}
+          <p class="lead">
+            I’m <strong>Mohamed Farid</strong>, a third-year Computer Science student at Sohag University.
+            I focus on front-end development and Flutter, and I like building projects that are clean,
+            responsive, and easy for people to use.
+          </p>
 
-h2{
-font-size:clamp(18px,2vw,24px);
-color:#aaa;
-margin-bottom:25px;
-}
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View My Work</a>
+            <a class="btn btn-ghost" href="mailto:mohamedfaridakl37@gmail.com">Contact Me</a>
+          </div>
 
-.social-icons{
-display:flex;
-gap:20px;
-margin-top:10px;
-}
+          <div class="stats">
+            <div class="stat-card">
+              <span class="stat-label">Focus</span>
+              <strong>Clean UI</strong>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Stack</span>
+              <strong>Web + Flutter</strong>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Style</span>
+              <strong>Simple & Modern</strong>
+            </div>
+          </div>
+        </div>
 
-.social-icons a{
-font-size:22px;
-color:white;
-background:#1c1c1c;
-padding:12px;
-border-radius:50%;
-transition:.3s;
-}
+        <div class="hero-visual reveal delay-1">
+          <div class="photo-shell">
+            <div class="photo-badge"></div>
+            <img src="ma.webp" alt="Mohamed Farid portrait" />
 
-.social-icons a:hover{
-transform:translateY(-4px);
-background:#333;
-}
+            <div class="photo-card glass">
+              <span class="dot"></span>
+              <div>
+                <p>Always learning and improving</p>
+                <strong>Front-End • Flutter • UI</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-section{
-padding:80px 10%;
-}
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>I like building simple, organized interfaces without overcomplication</h2>
+        </div>
 
-.section-title{
-font-size:32px;
-margin-bottom:40px;
-text-align:center;
-}
+        <div class="about-grid">
+          <article class="glass reveal">
+            <h3>Who I am</h3>
+            <p>
+              I'm Mohamed Farid, a Computer Science student who enjoys building real projects and improving step by step.
+              I work on front-end and Flutter, and I care about keeping my code and design clean and easy to understand.
+            </p>
+          </article>
 
-.about{
-max-width:800px;
-margin:auto;
-text-align:center;
-line-height:1.8;
-color:#ccc;
-}
+          <article class="glass reveal delay-1">
+            <h3>What I bring</h3>
+            <p>
+              I focus on responsive design, clear layouts, and smooth user experience.
+              I also pay attention to how the final project looks, because good presentation makes any project stronger.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-.skills-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-}
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Skills & Tools</p>
+          <h2>The main technologies I use</h2>
+        </div>
 
-.skill-card{
-background:#151515;
-padding:20px;
-border-radius:10px;
-text-align:center;
-transition:.3s;
-}
+        <div class="skills-grid">
+          <article class="skill-card glass reveal">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3>Front-End Development</h3>
+            <p>Building responsive websites with clean structure and simple UI</p>
+            <ul class="tag-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Responsive Design</li>
+            </ul>
+          </article>
 
-.skill-card:hover{
-transform:translateY(-5px);
-background:#1f1f1f;
-}
+          <article class="skill-card glass reveal delay-1">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="7" y="2" width="10" height="20" rx="2" ry="2"></rect>
+                <line x1="11" y1="18" x2="13" y2="18"></line>
+              </svg>
+            </div>
+            <h3>Flutter Development</h3>
+            <p>Creating mobile apps with organized layout and smooth user flow</p>
+            <ul class="tag-list">
+              <li>Flutter</li>
+              <li>Dart</li>
+              <li>UI Building</li>
+              <li>App Layouts</li>
+            </ul>
+          </article>
 
-.projects-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-}
+          <article class="skill-card glass reveal delay-2">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M3 12h18"></path>
+                <path d="M12 3a15 15 0 0 1 0 18"></path>
+                <path d="M12 3a15 15 0 0 0 0 18"></path>
+              </svg>
+            </div>
+            <h3>Visual Content & Social Media</h3>
+            <p>Helping projects look better online with clear and simple visual direction</p>
+            <ul class="tag-list">
+              <li>Brand Presence</li>
+              <li>Content Planning</li>
+              <li>Visual Consistency</li>
+              <li>Audience Appeal</li>
+            </ul>
+          </article>
+        </div>
 
-.project-card{
-background:#141414;
-border-radius:12px;
-overflow:hidden;
-transition:.35s;
-}
+        <div class="tools-box glass reveal">
+          <h3>Tools I work with</h3>
+          <div class="tool-list">
+            <span>VS Code</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>Figma</span>
+            <span>Canva</span>
+            <span>Chrome DevTools</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.project-card:hover{
-transform:translateY(-8px);
-}
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Some projects I built while learning and practicing</h2>
+        </div>
 
-.project-img{
-height:200px;
-display:flex;
-align-items:center;
-justify-content:center;
-color:#888;
-font-size:14px;
-background:#0f0f0f;
-border-bottom:1px solid #222;
-}
+        <div class="projects-grid">
+          <article class="project-card glass reveal">
+            <div class="project-top">
+              <span class="project-state live">Live Project</span>
+              <h3>CODI.X Platform</h3>
+            </div>
+            <p>
+              A platform for a student tech team to share courses, assignments, and updates in a simple and organized way.
+            </p>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://mohamedfarid37.github.io/codi.x/" title="Open live project">Open Project</a>
+            </div>
+          </article>
 
-.project-content{
-padding:20px;
-}
+          <article class="project-card glass reveal delay-1">
+            <div class="project-top">
+              <span class="project-state closed">Coming Soon</span>
+              <h3>Educational Platform</h3>
+            </div>
+            <p>
+              A learning platform idea focused on making content easier to browse and understand.
+            </p>
+            <div class="project-actions">
+              <button class="btn btn-disabled" disabled>Not Published Yet</button>
+            </div>
+          </article>
 
-.project-content h3{
-margin-bottom:10px;
-}
+          <article class="project-card glass reveal delay-2">
+            <div class="project-top">
+              <span class="project-state closed">Coming Soon</span>
+              <h3>Islamic Azkar Website</h3>
+            </div>
+            <p>
+              A simple Islamic website for daily azkar with clean layout and mobile-friendly design.
+            </p>
+            <div class="project-actions">
+              <button class="btn btn-disabled" disabled>Not Published Yet</button>
+            </div>
+          </article>
 
-.project-buttons{
-display:flex;
-gap:10px;
-margin-top:15px;
-}
+          <article class="project-card glass reveal delay-3">
+            <div class="project-top">
+              <span class="project-state closed">Coming Soon</span>
+              <h3>Souhagi Market</h3>
+            </div>
+            <p>
+              A local marketplace idea with clear product display and easy navigation.
+            </p>
+            <div class="project-actions">
+              <button class="btn btn-disabled" disabled>Not Published Yet</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-.project-buttons a{
-flex:1;
-text-align:center;
-padding:10px;
-border-radius:6px;
-background:#1f1f1f;
-color:white;
-text-decoration:none;
-font-size:14px;
-transition:.3s;
-}
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card glass reveal">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s work on something useful</h2>
+            <p class="contact-text">
+              If you have a project or idea and want someone to build it in a clean and simple way,
+              feel free to contact me.
+            </p>
+          </div>
 
-.project-buttons a:hover{
-background:#333;
-}
+          <div class="contact-links">
+            <a href="mailto:mohamedfaridakl37@gmail.com" class="contact-link">mohamedfaridakl37@gmail.com</a>
+            <a
+              href="https://www.linkedin.com/in/mohamed-farid-9b9920384?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              rel="noreferrer"
+              class="contact-link"
+            >
+              LinkedIn Profile
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-footer{
-text-align:center;
-padding:40px 20px;
-color:#888;
-}
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 Mohamed Farid. All rights reserved.</p>
+    </div>
+  </footer>
 
-@media(max-width:600px){
-
-header{padding-top:120px}
-
-.social-icons a{
-font-size:20px;
-padding:10px;
-}
-
-}
-
-</style></head><body><header><div class="hero-img">
-<img src="./images/ma.webp" alt="Mohamed Farid">
-</div><h1>Mohamed Farid</h1>
-<h2>Front-End & Mobile App Developer</h2><div class="social-icons">
-<a href="mailto:mohamedfaridamk37@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-<a href="https://www.linkedin.com/in/mohamed-farid-9b9920384"><i class="fa-brands fa-linkedin"></i></a>
-<a href="#"><i class="fa-brands fa-github"></i></a>
-<a href="https://wa.me/201100529937" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-</div></header><section>
-<h2 class="section-title">About Me</h2><p class="about">
-I am Mohamed Farid, a Computer Science and Artificial Intelligence student at Sohag University and a Front-End & Mobile App Developer. I build modern, responsive web and mobile applications with clean user interfaces and strong performance. 
-
-I also work as a Social Media Specialist and Video Editor, combining technical and creative skills to deliver engaging digital solutions. Fluent in Arabic and English, and always improving my skills in modern development technologies.
-</p></section><section>
-<h2 class="section-title">Skills</h2><div class="skills-grid"><div class="skill-card">HTML5</div>
-<div class="skill-card">CSS3</div>
-<div class="skill-card">JavaScript</div>
-<div class="skill-card">React</div>
-<div class="skill-card">Next.js</div>
-<div class="skill-card">Tailwind</div>
-<div class="skill-card">Bootstrap</div>
-<div class="skill-card">Responsive Design</div>
-<div class="skill-card">React Native</div>
-<div class="skill-card">Expo</div>
-<div class="skill-card">Firebase</div>
-<div class="skill-card">REST APIs</div>
-<div class="skill-card">Git & GitHub</div>
-<div class="skill-card">UI/UX Design</div></div>
-</section><section><h2 class="section-title">Projects</h2><div class="projects-grid"><!-- PROJECT 1 --><div class="project-card">
-<div class="project-img"> Codi.x Team</div><div class="project-content">
-<h3>Tech Team Platform</h3>
-<p>Full platform for managing a technical team, displaying members, projects and team activities.</p><div class="project-buttons">
-<a href="https://mohamedfarid37-cloud.github.io/codi.x/">Live Demo</a>
-<!-- <a href="#">View Code</a> -->
-</div>
-</div>
-</div><!-- PROJECT 2 --><div class="project-card">
-<div class="project-img"> AZKAR </div><div class="project-content">
-<h3>Azkar & Charity Website</h3>
-<p>Islamic website that provides daily azkar, reminders and charity content in a clean interface.</p><div class="project-buttons">
-<a href="project-card">Not available now</a>
-<!-- <a href="#">View Code</a> -->
-</div>
-</div>
-</div><!-- PROJECT 3 --><div class="project-card">
-<div class="project-img"> SOHAGY MARKET</div><div class="project-content">
-<h3>Sohagy Market</h3>
-<p>Modern marketplace website designed for showcasing products and local businesses.</p><div class="project-buttons">
-<a href="https://mohamedfarid37-cloud.github.io/Sohagy-Marker/">Live Demo</a>
-<!-- <a href="#">View Code</a> -->
-</div>
-</div>
-</div><!-- PROJECT 4 --><div class="project-card">
-<div class="project-img"> Educational WEBSITE</div><div class="project-content">
-<h3>Educational Platform</h3>
-<p>Online learning platform with courses, exams and student progress tracking.</p><div class="project-buttons">
-<a href="project-card">Not available now</a>
-<!-- <a href="">Not available now</a>
-<a href="#">View Code</a> -->
-</div>
-</div>
-</div></div></section><footer>
-© 2026 Mohamed Farid — Portfolio
-</footer></body>
+  <script src="js/main.js"></script>
+</body>
 </html>
